@@ -9,7 +9,7 @@ class BaseAgent:
     def __init__(self, model=None):
         # autodetect model
         if model is None:
-            model_name = "models/gemini-1.5-flash"
+            model_name = "models/gemini-2.5-flash"
             api_key = os.environ.get("GOOGLE_API_KEY")
             if api_key:
                 genai.configure(api_key=api_key)
